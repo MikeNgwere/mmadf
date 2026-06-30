@@ -10,12 +10,17 @@ import os
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ── Database ───────────────────────────────────────────────────
+
+
+
+import os
+
 DB_CONFIG = {
-    "host":     "localhost",
-    "database": "mmadf_db",
-    "user":     "postgres",
-    "password": "postgres123",
-    "port":     5432
+    "host": os.environ.get("DB_HOST", "aws-1-eu-central-1.pooler.supabase.com"),
+    "port": int(os.environ.get("DB_PORT", 5432)),
+    "dbname": os.environ.get("DB_NAME", "postgres"),
+    "user": os.environ.get("DB_USER", "postgres.ugazszbxlpuklddxlnrk"),
+    "password": os.environ.get("DB_PASSWORD", "HomeBound263#")
 }
 
 # ── Model settings ─────────────────────────────────────────────
