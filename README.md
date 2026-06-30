@@ -24,7 +24,7 @@ The framework combines **Isolation Forest** point anomaly detection with **tempo
 
 | Field | Detail |
 |---|---|
-| **Author** | Mike T. Ngwere |
+| **Author** | Mike Ngwere |
 | **Student Number** | R186209Q |
 | **Course** | MCS 504 — Database Engineering |
 | **Institution** | University of Zimbabwe, Department of Computer Science |
