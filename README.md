@@ -307,6 +307,7 @@ This project was developed for academic purposes as part of MCS 504 — Database
 
 ## 👤 Contact
 
-**Mike T. Ngwere**
+**Mike Ngwere**
 R186209Q | University of Zimbabwe
 Department of Computer Science
++263 782 568 399
