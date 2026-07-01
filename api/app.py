@@ -1,3 +1,4 @@
+import os
 # ============================================================
 # MMADF Flask REST API
 # Exposes all detection data from PostgreSQL via REST endpoints
