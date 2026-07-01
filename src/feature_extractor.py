@@ -17,7 +17,7 @@ def get_engine():
     """SQLAlchemy engine — avoids pandas DBAPI2 warning."""
     c = DB_CONFIG
     url = (f"postgresql+psycopg2://{c['user']}:{c['password']}"
-           f"@{c['host']}:{c['port']}/{c['database']}")
+           f"@{c['host']}:{c['port']}/{c['dbname']}")
     return create_engine(url)
 
 def get_conn():
