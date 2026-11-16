@@ -330,7 +330,7 @@ def render_header(name=None, role=None, post=None):
         f'</div>'
     ) if name else (
         f'<span style="color:#AED6F1;font-size:0.88rem;">'
-        f'University of Zimbabwe &nbsp;·&nbsp; MCS 504 Database Engineering'
+        f'AI-Driven Anomaly Detection &nbsp;·&nbsp; Fraud Prevention'
         f'</span>'
     )
     st.markdown(f"""
@@ -395,21 +395,25 @@ def login_page():
     _, col, _ = st.columns([1.3, 2, 1.3])
     with col:
         st.markdown(f"""
-        <div style="background:linear-gradient(135deg,{NAVY},{BLUE});
-                    padding:30px 32px;border-radius:12px;
-                    text-align:center;margin-bottom:24px;">
-            <div style="font-size:2.5rem;margin-bottom:8px;">🛃</div>
-            <h2 style="color:white;margin:0 0 6px;font-size:1.4rem;">
+        <div style="background:linear-gradient(145deg,{NAVY} 0%,{BLUE} 60%,#1A5276 100%);
+                    padding:40px 36px 32px;border-radius:14px;
+                    text-align:center;margin-bottom:28px;
+                    box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+            <div style="width:56px;height:56px;border-radius:14px;
+                        background:rgba(255,255,255,0.12);
+                        display:inline-flex;align-items:center;
+                        justify-content:center;font-size:1.8rem;
+                        margin-bottom:16px;">🔍</div>
+            <h2 style="color:white;margin:0 0 8px;font-size:1.55rem;
+                       font-weight:800;letter-spacing:0.3px;">
                 MMADF System
             </h2>
-            <p style="color:#AED6F1;margin:0 0 4px;font-weight:600;
-                      font-size:0.95rem;">
+            <p style="color:#AED6F1;margin:0;font-weight:500;
+                      font-size:0.97rem;letter-spacing:0.4px;">
                 Multi-Model Anomaly Detection Framework
             </p>
-            <p style="color:rgba(255,255,255,0.6);margin:0;font-size:0.82rem;">
-                MCS 504 Database Engineering &nbsp;·&nbsp;
-                University of Zimbabwe &nbsp;·&nbsp; 2026
-            </p>
+            <div style="width:40px;height:2px;background:rgba(174,214,241,0.4);
+                        margin:14px auto 0;border-radius:2px;"></div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -422,9 +426,9 @@ def login_page():
                     "Username", placeholder="e.g. admin")
                 password = st.text_input(
                     "Password", type="password",
-                    placeholder="Admin@ZIMRA2026!")
+                    placeholder="Enter your password")
                 st.caption(
-                    "Default credentials: **admin** / **Admin@ZIMRA2026!**")
+                    "Contact your system administrator if you need access.")
                 sub = st.form_submit_button(
                     "Login →", type="primary",
                     use_container_width=True)
@@ -1173,8 +1177,7 @@ def main_app():
             </p>
             <p style="color:rgba(255,255,255,0.55);
                       margin:0;font-size:0.80rem;">
-                Mike T. Ngwere &nbsp;·&nbsp; R186209Q &nbsp;·&nbsp;
-                MCS 504 Database Engineering &nbsp;·&nbsp;
+                Mike Ngwere &nbsp;·&nbsp; Zanamwe Ngonidzashe &nbsp;·&nbsp;
                 University of Zimbabwe &nbsp;·&nbsp; 2026
             </p>
         </div>
@@ -1792,8 +1795,7 @@ def main_app():
     st.markdown(
         f"<div class='footer'>"
         f"MMADF v1.0 &nbsp;·&nbsp; Multi-Model Anomaly Detection Framework &nbsp;·&nbsp; "
-        f"MCS 504 Database Engineering &nbsp;·&nbsp; "
-        f"Mike T. Ngwere &nbsp;·&nbsp; R186209Q &nbsp;·&nbsp; "
+        f"Mike Ngwere &nbsp;&amp;&nbsp; Zanamwe Ngonidzashe &nbsp;·&nbsp; "
         f"University of Zimbabwe &nbsp;·&nbsp; 2026"
         f"</div>",
         unsafe_allow_html=True
